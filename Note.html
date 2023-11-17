@@ -1,0 +1,909 @@
+<DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email signature</title>
+    <style>
+      body {
+        margin: 0;
+        /* background-color: #cccccc; */
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        /* background-color: #cccccc; */
+        padding-bottom: 60px;
+      }
+      .main {
+        background-color: #fafafa;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #212121;
+        z-index: 1;
+      }
+      .two-columns {
+        text-align: center;
+        font-size: 0;
+      }
+      .two-columns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+      .banner {
+        text-align: center;
+        font-size: 0;
+        /* background-color: blueviolet; */
+        position: relative;
+        overflow: hidden;
+
+        /* just styles for demo */
+        width: 600px;
+        z-index: 1;
+      }
+      .banner:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -50%;
+        top: 0;
+        width: 200%;
+        bottom: 0;
+        background-color: #1c94ba;
+        /* border-top: 15px solid #fdedea; */
+        border-radius: 0 0 50% 50%;
+        z-index: -1;
+      }
+      .banner .column-one {
+        width: 100%;
+        max-width: 280px;
+        display: inline-block;
+       
+        text-align: center;
+      }
+      .banner .column-two {
+        width: 100%;
+        max-width: 320px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+      .banner .padding {
+        padding: 30px;
+      }
+      .banner .content {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 5px;
+      }
+
+      .section {
+        text-align: start;
+        justify-content: center;
+        font-size: 0;
+      }
+      .section .column-one {
+        width: 100%;
+        max-width: 250px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+      .section .column-two {
+        width: 100%;
+        max-width: 350px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+      .section .padding {
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .section .content {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0 5px;
+      }
+
+      .footer {
+        padding-top: 50px;
+        text-align: center;
+
+        font-size: 0;
+        position: relative;
+        overflow: hidden;
+        width: 600px;
+        z-index: 1;
+      }
+      .footer:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -50%;
+        top: 0;
+        width: 200%;
+        bottom: 0;
+        background-color: #159b48;
+        border-radius: 50% 50% 0 0;
+        z-index: -1;
+      }
+      .footer .column-one {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: bottom;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+     
+      .footer .column-two {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: bottom;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .footer .padding {
+       
+       padding-left: 5px;
+      
+      }
+      .footer .content {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <!-- outside table -->
+      <table class="outside" width="100%" style="max-width: 600px; background-color: #fafafa;">
+        <tr>
+          <td style="padding-top: 60px;">
+            <p
+              style="
+              
+                line-height: 28px;
+               padding: 0 10px;
+               margin: 0;
+                text-align: start;
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              nobis maxime eius exercitationem aspernatur eos, ratione nesciunt
+              laboriosam alias eum error. Perspiciatis dignissimos doloremque
+              incidunt aut quo, non repellat dicta!
+            </p>
+            <p
+            style="
+            
+              line-height: 28px;
+             padding: 0 10px;
+             margin: 0;
+              text-align: start;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            nobis maxime eius exercitationem aspernatur eos, ratione nesciunt
+            laboriosam alias eum error. Perspiciatis dignissimos doloremque
+            incidunt aut quo, non repellat dicta!
+          </p>
+         
+           
+          </td>
+        </tr>
+
+        <!-- outside table -->
+
+           <!-- spacing -->
+           <tr height="30" style="font-size: 30px ; line-height: 3%;">
+            <td></td>
+          </tr>
+           <!-- spacing -->
+
+        <!-- Main table -->
+        <tr>
+          <td>
+            <table class="main" width="100%">
+              <!-- top border -->
+              <tr>
+                <td height="8" style="background-color: #159b48"></td>
+              </tr>
+              <!-- top border -->
+              <!-- Logo section -->
+              <tr>
+                <td style="padding: 14px 0 4px">
+                  <table width="100%">
+                    <tr>
+                      <td class="two-columns">
+                        <table class="column">
+                          <tr>
+                            <td style="padding: 0 60px 10px">
+                              <a href="#">
+                                <img
+                                  src="https://i.postimg.cc/bwmJKMPc/github.png"
+                                  alt="logo"
+                                  title="logo"
+                                  width="40"
+                                />
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column">
+                          <tr>
+                            <td style="padding: 10px 70px">
+                              <a href="#"
+                                ><img
+                                  src="https://i.postimg.cc/bwmJKMPc/github.png"
+                                  alt=""
+                                  width="20"
+                              /></a>
+                              <a href="#">
+                                <img
+                                  src="https://i.postimg.cc/bwmJKMPc/github.png"
+                                  alt="logo"
+                                  title="logo"
+                                  width="20"
+                                />
+                              </a>
+                              <a href="#">
+                                <img
+                                  src="https://i.postimg.cc/bwmJKMPc/github.png"
+                                  alt="logo"
+                                  title="logo"
+                                  width="20"
+                                />
+                              </a>
+                              <a href="#">
+                                <img
+                                  src="https://i.postimg.cc/bwmJKMPc/github.png"
+                                  alt="logo"
+                                  title="logo"
+                                  width="20"
+                                />
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Logo section -->
+              <!-- Banner section -->
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td class="banner">
+                        <table class="column-one">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 280px;
+
+                                    padding: 40px;
+                                    "
+                                  >
+                                    <h2
+                                      style="font-weight: bold; color: #ffffff"
+                                    >
+                                      Your score
+                                    </h2>
+                                   <p style="padding: 0;margin: 0;"><span style="font-size: 54px; font-weight: 700; color: #ffffff;">20</span>  <span style="padding: 0;margin: 0;font-size:20px; color: #ffffff;">%</span>
+                                   </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column-two">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="max-width: 320px; padding: 20px"
+                                  >
+                                    <h1
+                                      style="
+                                        font-weight: bold;
+                                        line-height: 36px;
+                                        color: #ffffff;
+                                      "
+                                    >
+                                      Your next step toward smart manufacturing
+                                    </h1>
+                                    <p
+                                      style="
+                                        padding: 0;
+                                        margin: 0;
+                                        color: #ffffff;
+                                        font-size: 16px;
+                                        line-height: 25px;
+                                      "
+                                    >
+                                      Lorem ipsum dolor sit amet consectetur,
+                                      adipisicing elit. Aspernatur alias
+                                      explicabo quos magni sed adipisci ea
+                                      impedit, obcaecati nam officiis.
+                                    </p>
+                                  
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Banner section -->
+
+                 <!-- spacing -->
+                 <tr height="30" style="font-size: 30px ; line-height: 3%;">
+                  <td></td>
+                </tr>
+                 <!-- spacing -->
+              <!-- two column -->
+
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td class="section">
+                        <table class="column-one">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 250px;
+                                      background-color: #f2fff7;
+
+                                      padding: 20px;
+                                      border: 1px solid #57b67b;
+                                    "
+                                  >
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Quas esse
+                                    </p>
+                                    <h2>20%</h2>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column-two">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 350px;
+
+                                      background-color: #ffffff;
+                                      padding: 20px;
+                                    "
+                                  >
+                                    <h5 style="padding: 0; margin: 0">
+                                      Some heading
+                                    </h5>
+                                    <p
+                                      style="
+                                        text-align: start;
+                                        padding: 0;
+                                        margin: 0;
+                                      "
+                                    >
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                    <h5 style="padding: 0; margin: 0">
+                                      some heading
+                                    </h5>
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td class="section">
+                        <table class="column-one">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 250px;
+                                      background-color: #f2fff7;
+
+                                      padding: 20px;
+                                      border: 1px solid #57b67b;
+                                    "
+                                  >
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Quas esse
+                                    </p>
+                                    <h2>20%</h2>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column-two">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 350px;
+
+                                      background-color: #ffffff;
+                                      padding: 20px;
+                                    "
+                                  >
+                                    <h5 style="padding: 0; margin: 0">
+                                      Some heading
+                                    </h5>
+                                    <p
+                                      style="
+                                        text-align: start;
+                                        padding: 0;
+                                        margin: 0;
+                                      "
+                                    >
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                    <h5 style="padding: 0; margin: 0">
+                                      some heading
+                                    </h5>
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td class="section">
+                        <table class="column-one">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 250px;
+                                      background-color: #f2fff7;
+
+                                      padding: 20px;
+                                      border: 1px solid #57b67b;
+                                    "
+                                  >
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Quas esse
+                                    </p>
+                                    <h2>20%</h2>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column-two">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 350px;
+
+                                      background-color: #ffffff;
+                                      padding: 20px;
+                                    "
+                                  >
+                                    <h5 style="padding: 0; margin: 0">
+                                      Some heading
+                                    </h5>
+                                    <p
+                                      style="
+                                        text-align: start;
+                                        padding: 0;
+                                        margin: 0;
+                                      "
+                                    >
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                    <h5 style="padding: 0; margin: 0">
+                                      some heading
+                                    </h5>
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td class="section">
+                        <table class="column-one">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 250px;
+                                      background-color: #f2fff7;
+
+                                      padding: 20px;
+                                      border: 1px solid #57b67b;
+                                    "
+                                  >
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Quas esse
+                                    </p>
+                                    <h2>20%</h2>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column-two">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 350px;
+
+                                      background-color: #ffffff;
+                                      padding: 20px;
+                                    "
+                                  >
+                                    <h5 style="padding: 0; margin: 0">
+                                      Some heading
+                                    </h5>
+                                    <p
+                                      style="
+                                        text-align: start;
+                                        padding: 0;
+                                        margin: 0;
+                                      "
+                                    >
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                    <h5 style="padding: 0; margin: 0">
+                                      some heading
+                                    </h5>
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td class="section">
+                        <table class="column-one">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 250px;
+                                      background-color: #f2fff7;
+
+                                      padding: 20px;
+                                      border: 1px solid #57b67b;
+                                    "
+                                  >
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Quas esse
+                                    </p>
+                                    <h2>20%</h2>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column-two">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="
+                                      max-width: 350px;
+
+                                      background-color: #ffffff;
+                                      padding: 20px;
+                                    "
+                                  >
+                                    <h5 style="padding: 0; margin: 0">
+                                      Some heading
+                                    </h5>
+                                    <p
+                                      style="
+                                        text-align: start;
+                                        padding: 0;
+                                        margin: 0;
+                                      "
+                                    >
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                    <h5 style="padding: 0; margin: 0">
+                                      some heading
+                                    </h5>
+                                    <p style="padding: 0; margin: 0">
+                                      Lorem ipsum dolor, sit amet consectetur
+                                      adipisicing elit. Animi, facere.
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- two column -->
+                 <!-- spacing -->
+                 <tr height="30" style="font-size: 30px ; line-height: 3%;">
+                  <td></td>
+                </tr>
+                 <!-- spacing -->
+              <!-- footer section -->
+           
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td class="footer">
+                        <table class="column-one">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                               
+                                    style="
+                                      max-width: 300px;
+                                   
+
+                                     
+                                      background-color: #f2fff7;
+                                      padding: 20px;
+                                     
+                                      border-bottom-right-radius: 60%;
+                                      
+
+                                    "
+                                  >
+                                    <h2
+                                      style="font-weight: bold; color: #1a0b0b"
+                                    >
+                                      Your score
+                                    </h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit accusamus quis quaerat iusto debitis consequatur.</p>
+                                    <h1
+                                      style="
+                                        padding: 0;
+                                        margin: 0;
+                                        font-weight: bold;
+                                        font-size: 54px;
+                                        padding-top: 30px;
+                                        color: #0f0303;
+                                      "
+                                    >
+                                      20
+                                     
+                                      <span
+                                        style="
+                                          padding: 0;
+                                          margin: 0;
+                                          font-size: 36px;
+                                        "
+                                        >%</span
+                                      >
+                                    </h1>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column-two">
+                          <tr>
+                            <td class="padding">
+                              <table class="content">
+                                <tr>
+                                  <td
+                                    width="100%"
+                                    style="max-width: 300px; 
+                                   
+                                    padding: 20px;"
+                                   
+                                    
+                                    
+                                  >
+                                    <h1
+                                      style="
+                                        font-weight: bold;
+                                        line-height: 36px;
+                                        color: #ffffff;
+                                      "
+                                    >
+                                      Your next step toward smart manufacturing
+                                    </h1>
+                                    <p
+                                      style="
+                                        padding: 0;
+                                        margin: 0;
+                                        color: #ffffff;
+                                        font-size: 16px;
+                                        line-height: 25px;
+                                      "
+                                    >
+                                      Lorem ipsum dolor sit amet consectetur,
+                                      adipisicing elit. Aspernatur alias
+                                      explicabo quos magni sed adipisci ea
+                                      impedit, obcaecati nam officiis.
+                                    </p>
+                                   
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- footer section -->
+            </table>
+          </td>
+        </tr>
+        <!-- Main table -->
+
+           <!-- spacing -->
+           <tr height="30" style="font-size: 30px ; line-height: 3%;">
+            <td></td>
+          </tr>
+           <!-- spacing -->
+        <tr>
+          <td>
+            <p
+            style="
+            
+              line-height: 28px;
+             padding: 0 10px;
+             margin: 0;
+              text-align: start;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            nobis maxime eius exercitationem aspernatur eos, ratione nesciunt
+            laboriosam alias eum error. Perspiciatis dignissimos doloremque
+            incidunt aut quo, non repellat dicta!
+          </p>
+         
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
